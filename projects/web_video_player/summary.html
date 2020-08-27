@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="../..assets/css/noscript.css" /></noscript>
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+						<a href="../../index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -28,32 +28,80 @@
 				<!-- Menu -->
 					<nav id="menu">
 						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="../../index.html">Home</a></li>
+							<li><a href="../../landing.html">Portfolio</a></li>
+							<li><a href="../../generic.html">About</a></li>
+							<li><a href="../../elements.html">Contact</a></li>
 						</ul>
-						<ul class="actions stacked">
+						<!--<ul class="actions stacked">
 							<li><a href="#" class="button primary fit">Get Started</a></li>
 							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
+						</ul>-->
 					</nav>
 
 				<!-- Main -->
 					<div id="main" class="alt">
 
 						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h1>Generic</h1>
-									</header>
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-								</div>
-							</section>
+                        <section id="one">
+                            <div class="inner">
+                                <header class="major">
+                                    <h1>Web Video Player</h1>
+                                </header>
+                                <!--Project Summary-->
+                                <p>
+                                    This was a group project that I worked on for my Software Engineering class. I worked in a group of 4 to create the application using Java, Amazon Web Services and an SQL database. The application allows participant users to upload and manage short video clips in their own personal library, as well as create playlists of those videos. They can also make videos publicly available and gain access to videos in other people's libraries. Administrator users can add/remove sites to gain access to the videos from those sites, as well as mark which of their own videos are publicly available.
+                                </p>
+                                <p>
+                                    Personally, I worked on a portion of the controller functions for the use cases that were laid out at the beginning of the term. Some of these functions also interacted with the SQL database, which kept track of the videos, playlists and remote sites for the user. I also wrote test cases for those functions, and managed the groups Amazon Web Services account and API for the application.
+                                </p>
+                                <p>
+                                    The application itself is not currently available, since the AWS database has been deactivated to prevent unnecessary costs. Below are some screenshots from the application
+                                </p>
+
+                                <!--Images of the project-->
+                                <figure>
+                                    <img src="admin_lib_editor.png" alt="" />
+                                    <figcaption>
+                                        Administrator Library Editor<br />
+                                        This is where the administrator can view all the videos collected by remote sites. They can mark/unmark video segments to make them available to participants.
+                                    </figcaption>
+                                </figure>
+                                <br />
+                                <figure>
+                                    <img src="admin_site_editor.png" alt="" />
+                                    <figcaption>
+                                        Administrator Site Editor<br />
+                                        This is where an administrator could add/remove remote sites, which would provide access to the video segments available on those other remote segments.
+                                    </figcaption>
+                                </figure>
+                                <br />
+                                <figure>
+                                    <img src="participant_lib_editor_1.png" alt="" />
+                                    <figcaption>
+                                        Participant Library Editor (1)<br />
+                                        This is where a participant can upload, delete or watch video segments from their personal library as well as those from remote sites.
+                                    </figcaption>
+                                </figure>
+                                <br />
+                                <figure>
+                                    <img src="participant_lib_editor_2.png" alt="" />
+                                    <figcaption>
+                                        Participant Library Editor (2)<br />
+                                        Further down the participant library editor page is where the participant can upload a video segment to their library or search through the video segments currently in the library.
+                                    </figcaption>
+                                </figure>
+                                <br />
+                                <figure>
+                                    <img src="participant_playlist_editor.png" alt="" />
+                                    <figcaption>
+                                        Participant Playlist Editor<br />
+                                        This is where a participant can create playlists of video segments in their library.
+                                    </figcaption>
+                                </figure>
+
+                            </div>
+                        </section>
 
 					</div>
 
@@ -87,23 +135,14 @@
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
+										<a href="#">joeswetz@gmail.com</a>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-phone"></span>
 										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
+										<span>914-482-8384</span>
 									</div>
 								</section>
 							</section>
@@ -114,11 +153,8 @@
 					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/JoeSwetz" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/joseph-swetz-ab1a92150" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 							</ul>
 							<ul class="copyright">
 								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
@@ -129,13 +165,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
 
 	</body>
 </html>
