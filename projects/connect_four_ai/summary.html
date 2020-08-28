@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Forty by HTML5 UP</title>
+		<title>My Portfolio - Joe Swetz</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="../../index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+						<a href="../../index.html" class="logo"><strong>My Portfolio</strong> <span>Joe Swetz</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -46,19 +46,15 @@
 							<section id="one">
                                 <div class="inner">
                                     <header class="major">
-                                        <h1>Game Engine / Snow Day</h1>
+                                        <h1>Connect Four AI</h1>
                                     </header>
-                                    <iframe width="560"
-                                            height="315"
-                                            src="https://www.youtube.com/embed/J6S5U9aTYy0"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
+                                    <img src="connect_four_ai_screenshot.png"
                                     <p>
-                                        This game was created with the game engine that I made based off the book "Dragonfly: Program a Game Engine from Scratch" by Mark Claypool: https://dragonfly.wpi.edu/book/
-                                    </p>
-                                    <p>
-                                        I created the game with a partner via pair programming. Both the game code and engine were written in C++. It is a simple game that tasks the player with avoiding being frozen by dodging snow and collecting hot chocolate. Collecting a firework will create a shield that destroys snow or hot chocolate that comes into contact with the shield. The longer the player survives, the more difficult the game will become.
+                                        This was part of the implementation of the Minimax algorithm for a computer player for Connect Four. It was coded in Racket, and was done as a lab assignment for the WPI course. "Accelerated Introduction to Program Design."
+                                        <br /><br />
+                                        There are two evaluation functions: simple and complex. The simple checks for four in a rows on the board, while the complex looks for fours, threes, and twos in a row and values them accordingly. I approached this problem by drawing a row of checkers on a piece of paper. I walked myself through a potential approach, and I then translated it to code.
+                                        <br /><br />
+                                        The computer-modes function is what implements the Minimax search. I also approached this by walking myself through the process step by step, and then translated that into code.
                                     </p>
                                  </div>
 							</section>
@@ -68,7 +64,7 @@
 				<!-- Contact -->
 					<section id="contact">
 						<div class="inner">
-							<section>
+							<!--<section>
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
@@ -89,7 +85,7 @@
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
-							</section>
+							</section>-->
 							<section class="split">
 								<section>
 									<div class="contact-method">
