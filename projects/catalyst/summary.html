@@ -6,7 +6,7 @@
 -->
 <html lang="en">
 <head>
-	<title>My Portfolio - 33 Alder Ridge - Joe Swetz</title>
+	<title>My Portfolio - Catalyst - Joe Swetz</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../../assets/css/main.css" />
@@ -46,35 +46,68 @@
 		<section id="one">
 			<div class="inner">
 				<header class="major">
-					<h1>33 Alder Ridge</h1>
+					<h1>Catalyst</h1>
 				</header>
-				<iframe width="560"
+				<iframe
+						width="560"
 						height="315"
-						src="https://www.youtube.com/embed/4_YZupPpZeo"
-						title="33 Alder Ridge"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						src="https://www.youtube.com/embed/aCcg6MGnRP8"
+						title="YouTube video player"
+						allow="accelerometer;
+							   autoplay;
+							   encrypted-media;
+							   gyroscope;
+							   picture-in-picture"
 						allowfullscreen>
+
 				</iframe>
 				<p>
-					This game was created as the final project for a class at WPI titled "Advanced
-					Storytelling: Quest Logic and Level Design." We were tasked with creating some
-					sort of level in Unreal Engine 4, and my partner and I decided we wanted to make
-					a creepy house, inspired by PT. We took it a step further and decided to turn it
-					into a small game where you can inspect objects around the house to learn about
-					what happened at this house. This video above is the final video submission for
-					the class, where we talk through the level.
-					<br /><br />
-					I created the game with a partner, Anne Higgins, whose website can be found
-					<a target="_blank" href="https://ahiggins0427.wixsite.com/website">here</a>. I
-					did the programming for the project, and Anne helped find and create art assets
-					for the level. The voice acting was done by Jim Plante and Cameron Person.
-					<br /><br />
-					From an educational perspective, I wanted to learn how to create an object
-					inspection mechanic for both the sake of the level, and also to understand how
-					to do it for future games, as it is a common game mechanic. I learned how to do
-					this by	following <a target="_blank" href="https://www.youtube.com/playlist?list=PL4G2bSPE_8umrMvP6PjvossYS9gOZGYl7">this tutorial</a>.
-					<br /><br />
-					The game is available to download <a target="_blank" href="https://drive.google.com/file/d/1wJluFfw9q7hY_ee3A7jwNabNW7l5BFIr/view?usp=sharing">here</a>.
+					Catalyst was a game that was created as part of my Major Qualifying
+					Project (MQP) at WPI, titled "Catalyst - Using Hitbox Scaling for Latency
+					Compensation in a Cloud Based Game." The goal of the project was to create
+					and implement a latency compensation technique in a custom game, which was
+					to be deployed on Google Stadia. The idea behind this technique was to
+					maintain player accuracy and quality of experience in spite of a player's
+					latency. The project itself was sponsored by Google, who provided feedback
+					on our work and the ability to deploy our game to Google Stadia for testing.
+					<br><br>
+					The team that I was a part of decided to create a multiplayer first person
+					shooter called Catalyst. The idea was to have players cast spells at each other,
+					rather than using guns like in many other FPS titles. Player can combine three
+					different elements for a total of 10 unique spells in a Capture-the-Flag
+					multiplayer arena.
+					<br><br>
+					Since I have always been a big fan of multiplayer first person shooters like
+					Halo, Destiny, etc., I decided to work on the networking aspects of the game in
+					order to learn more about how multiplayer games are structured and how I, as a game
+					programmer, and create them. I started by learning about how to make a basic
+					multiplayer game in Unreal Engine 4, which taught me the fundamentals of multiplayer
+					works in the engine, such as the peer-to-peer architecture, how to create a lobby,
+					connect other players through Steam matchmaking, and placing players into a match
+					once everyone was ready. From there, I took that knowledge and worked on the other
+					networking aspects of the game as well, such as updating match state across all player
+					(like when a flag was captured) and adding features like being able to choose your
+					team in the lobby. I created AI bots that would act as teammates for
+					players, with behaviors for going after the other team's flag, bringing it home once
+					they grabbed it, protecting allies who are carrying an enemy flag, and attacking
+					enemies who are stealing their flag. Additionally, I created the main menu and
+					helped my teammates debug any multiplayer-related issues.
+					<br><br>
+					Since no one on the team was a game artist, we used previously created assets from the
+					Unreal marketplace, many of which came from the game Paragon, which was created by Epic
+					Games but <a target="_blank" href="https://www.unrealengine.com/en-US/paragon">
+					after cancellation released the assets for free online.</a>
+					<br><br>
+					The game went through multiple stages of development. We first created a small
+					demo, which was a single player game in which the player would throw fireballs
+					at a moving NPC target. We gave this demo to a another group of student researchers,
+					who ran a user study to determine how much hitbox scaling should be supplied in
+					response to player latency to achieve a desired accuracy. We also brought the game
+					to WPI's alphafest, where other students were able to playtest the game and provide
+					feedback. Finally, we ran our own user study with the final version of the game on
+					Google Stadia, where we measured player accuracy in response to artificially induced
+					latency with hitbox scaling on and off. These results were written in a final report
+					and presentation that we gave to Google.
 				</p>
 			</div>
 		</section>
