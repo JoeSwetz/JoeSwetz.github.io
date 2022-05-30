@@ -1,0 +1,174 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+<head>
+	<title>My Portfolio - Catalyst - Joe Swetz</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="../../index.html" class="logo"><strong>My Portfolio</strong> <span>Joe Swetz</span></a>
+		<nav>
+			<a href="#menu">Menu</a>
+		</nav>
+	</header>
+
+	<!-- Menu -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="../../portfolio.html">Portfolio</a></li>
+			<li><a href="../../about.html">About</a></li>
+			<li><a href="../../contact.html">Contact</a></li>
+		</ul>
+		<!--<ul class="actions stacked">
+            <li><a href="#" class="button primary fit">Get Started</a></li>
+            <li><a href="#" class="button fit">Log In</a></li>
+        </ul>-->
+	</nav>
+
+	<!-- Main -->
+	<div id="main" class="alt">
+
+		<!-- One -->
+		<section id="one">
+			<div class="inner">
+				<header class="major">
+					<h1>Lift-Off Laetus</h1>
+				</header>
+				<img src="lift_off_laetus_screenshot.png" alt="" />
+				<p>
+					One of my final game development projects at Worcester Polytechnic Institute was for a class 
+					called Technical Game Development II. The class was taught alongside an advanced game art class, 
+					where the professors put students from each class into development teams, each with about
+					2-3 artists and 2-3 programmers. The group I was part of ended up created Lift-Off Laetus!
+					<br><br>
+					Lift-Off Laetus is a turned-based strategy game that takes place on the planet Laetus. Two
+					teams of space-farers have crash landed on the planet and must fight for limited resources to fix
+					their own ship and make it home. Both players control a team of three crew members. The game takes 
+					place on a grid of squares, and on each turn the player can move their crew around the board, 
+					attacking other players and collecting resources for their ship. The first team to collect three 
+					crates wins!
+					<br><br>
+					Development of the game was chronicled on our development team website, which you can find 
+					<a href="https://used-unicycle-usurpers.github.io/website/index.html" class="link">here</a>.
+					You'll find links to download the alpha and beta versions of the game, our final class presentation
+					and our dev blog with weekly updates from the art and tech teams, giving insight into the development
+					proess alongside screenshots of our work.
+					<br><br>
+					I personally worked on the programming side of things for this game with 3 other members on the tech team. 
+					The game was developed in Unreal Engine 4 using C++. One of the biggest parts of the game that I developed 
+					was the underlying mechanism for spawning the grid of squares on top  of the terrain developed by the art 
+					team. I wanted to give us as much flexiblity as possible with regards to how we could set up the board, 
+					since things were likely to change quickly over the 7 week development period. On startup, the game reads 
+					the topology of the board from a config file and spawns the grid tiles on top of the terrain (so if the art 
+					team changes the landscape, the tiles would adjust automatically). The config file also specifies the location 
+					of obstacles, resources boxes, powerups, and holes in the grid. From an object-oriented perspective, this also
+					made it simple to set up individual objects for each tile, which alloed to trach properties such the player
+					standing on that tile and whether an effect had been applied to that tile by a crew member's ability.
+					<br><br>
+					I also worked on the input system for the game. Since we were develpoing a local multiplayer game
+					during a period of remote learning during the Covid-19 pandemic, we had the challenge of figuring out
+					how to test the game when no one could be in the same room. To get our alpha up and running, we had one
+					player used the keyboard, while the other had to plug in a controller. During the alpha testing
+					this became a pain point for some players (all testers had to play both sides on their own since we were
+					all at home), especially those who did not have a controller to plug in. Therefore, in the final version of
+					the game I created a more flexible input system that allowed the players to either use a single keyword
+					(with one player using WASD and the other using arrow keys), or to plug in a controller for the second
+					player. The player can choose their preferred input option from the main menu.
+					<br><br>
+					Additionally, I also worked on intergrating the art team's assets into the game. I was already very 
+					experienced with Unreal Engine 4 at the time due to my work on Catalyst and 33 Alder Ridge, so I was able
+					to help the art team import their, where I could then attach them to characters, and carrying out animations
+					in the game's C++ code.
+					<br><br>
+					Finally, I helped polish the game by fixing bugs, setting up a main menu, and creating a victory cinematic
+					when a teams wins the game.
+				</p>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Contact -->
+	<section id="contact">
+		<div class="inner">
+			<!--<section>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="6"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" class="primary" /></li>
+                        <li><input type="reset" value="Clear" /></li>
+                    </ul>
+                </form>
+            </section>-->
+			<section class="split">
+				<section>
+					<div class="contact-method">
+						<span class="icon solid alt fa-envelope"></span>
+						<h3>Email</h3>
+						<a href="mailto:joeswetz@gmail.com">joeswetz@gmail.com</a>
+					</div>
+				</section>
+				<section>
+					<div class="contact-method">
+						<span class="icon solid alt fa-phone"></span>
+						<h3>Phone</h3>
+						<span>914-482-8384</span>
+					</div>
+				</section>
+			</section>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="https://github.com/JoeSwetz" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="https://www.linkedin.com/in/joseph-swetz-ab1a92150" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/jquery.scrolly.min.js"></script>
+<script src="../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../assets/js/browser.min.js"></script>
+<script src="../../assets/js/breakpoints.min.js"></script>
+<script src="../../assets/js/util.js"></script>
+<script src="../../assets/js/main.js"></script>
+
+</body>
+</html>
